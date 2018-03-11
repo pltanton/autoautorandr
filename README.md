@@ -5,6 +5,6 @@ monitor connection.
 
 To install it in environment just:
 
-```nix
+```bash
 nix-env -f autoautorandr.nix -i autoautorandr
 ```
