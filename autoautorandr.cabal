@@ -1,0 +1,9 @@
+name: autoautorandr
+version: 1.0.0
+build-type: Simple
+cabal-version: >= 1.18
+
+executable autoautorandr
+    build-depends: base < 5, text, udev, select, process, directory
+    main-is: AutoAutorandr.hs
+    default-language: Haskell2010
