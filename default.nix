@@ -1,4 +1,4 @@
-{ stdenv, mkDerivation, base, udev, select, text }: 
+{ stdenv, mkDerivation, base, udev, select, text, autorandr }: 
 
 mkDerivation {
   pname = "autoautorandr";
@@ -8,6 +8,7 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [ base udev select text ];
+  executableSystemDepends = [ autorandr ];
 
   license = stdenv.lib.licenses.mit;
 }
